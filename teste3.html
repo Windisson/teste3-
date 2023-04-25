@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#sobrenome {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Formulário</h1>
+	<form name='upviralForm145875' id='' method='post'
+ action='https://app.upviral.com/site/parse_new_users/call/ajax/campId/145875/snippet_id/6447454c492a5'>
+<div class='form-group'>
+<label>Name</label>
+<input type='text' name='name'  class='form-control' value=''>
+</div>
+<div class='form-group'>
+<label>Email Id</label>
+<input type='text' name='email' class='form-control' value=''>
+</div>
+<div class='form-group'>
+<input type='hidden' id="ID101" name='UtmSource' class='form-control' value=''>
+</div>
+<div class='form-group'>
+<input type='hidden' id="ID102" name='UtmMedium' class='form-control' value=''>
+</div>
+<div class='form-group'>
+<input type='hidden'id="ID103" name='UtmCampaign' class='form-control' value=''>
+</div>
+<div class='form-group'>
+<input type='hidden' id="ID104" name='UtmTerm' class='form-control' value=''>
+</div>
+<div class='form-group'>
+<input type='hidden' id="ID105" name='UtmContent' class='form-control' value=''>
+</div>
+<div class='form-group'>
+<label></label>
+<input type='submit' name='upviralsubmit'  value='Submit'>
+<input type='hidden' name='reflink' value=''>
+</div>
+</form>
+
+
+</body>
+
+<script>
+
+document.getElementById("ID105").value = window.location.URLSearchParams
+
+
+// Pega a URL atual
+const currentUrl = window.location.href;
+
+// Procura por parâmetros UTM na URL
+const utmSource = new URLSearchParams(currentUrl).get("utm_source") || "";
+const utmMedium = new URLSearchParams(currentUrl).get("utm_medium") || "";
+const utmCampaign = new URLSearchParams(currentUrl).get("utm_campaign") || "";
+const utmTerm = new URLSearchParams(currentUrl).get("utm_term") || "";
+const utmContent = new URLSearchParams(currentUrl).get("utm_content") || "";
+
+// Preenche os campos de formulário escondidos com os valores dos parâmetros UTM
+document.getElementById("ID101").value = utmSource;
+document.getElementById("ID102").value = utmMedium;
+document.getElementById("ID103").value = utmCampaign;
+document.getElementById("ID104").value = utmTerm;
+            </script>
+
+</html>
+
+<footer>
+    <script>
+        window.UpviralConfig = {camp:"8AS(4M",snippet_id:"6447454c492a5"}
+        </script>
+        <script language="javascript" src="https://snippet.upviral.com/upviral.js"></script>
+
+        
+
+</footer>   
